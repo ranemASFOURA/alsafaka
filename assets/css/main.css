@@ -733,6 +733,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   padding-bottom: 60px;
+  text-align: center;
   position: relative;
 }
 
@@ -746,14 +747,17 @@ section,
   text-transform: uppercase;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   position: relative;
+  display: inline-block;
 }
 
+.section-title h2::before,
 .section-title h2::after {
   content: "";
   width: 120px;
   height: 1px;
   display: inline-block;
   background: var(--accent-color);
+  vertical-align: middle;
   margin: 4px 10px;
 }
 
